@@ -5,6 +5,7 @@ import UseEffectDemo from "./useEffect/useEffectDemo";
 import UseRefDemo from "./useRef/UseRefDemo";
 import UseLayoutEffect from "./useLayoutEffect/UseLayoutEffect";
 import UseImerativeHandle from "./useImerativeHandle/UseImerativeHandle";
+import UseContext from "./useContext/UseContext";
 
 function App() {
   return (
@@ -60,7 +61,7 @@ function App() {
           <UseLayoutEffect /> */}
         </li>
         <li>
-          <h1>useImperativeHandle()</h1>
+          {/*  <h1>useImperativeHandle()</h1>
           <br />
           useImperativeHandle{" "}
           <b>
@@ -70,9 +71,21 @@ function App() {
           . From there, the Parent can either use it itself or pass it to
           another Child. Note that you can only pass a ref as a prop to a child
           that wraps its component in forwardRef
-          <UseImerativeHandle />
+          <UseImerativeHandle /> */}
         </li>
-        <li></li>
+        <li>
+          <h1>useContext()</h1>
+          <br />
+          “useContext” hook is{" "}
+          <b>
+            used to create common data that can be accessed throughout the
+            component hierarchy without passing the props down manually to each
+            level
+          </b>
+          . Context defined will be available to all the child components
+          without involving “props”.
+          <UseContext />
+        </li>
         <li></li>
       </ul>
     </div>
