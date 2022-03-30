@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import UseStateDemo from "./useState/UseStateDemo";
 import UseEffectDemo from "./useEffect/useEffectDemo";
+import UseRefDemo from "./useRef/UseRefDemo";
 
 function App() {
   return (
@@ -26,16 +27,24 @@ function App() {
           <UseReducerDemo /> */}
         </li>
         <li>
-          <h1>useEffect()</h1>
+          {/*  <h1>useEffect()</h1>
           <br />
           The useEffect Hook{" "}
           <b>allows you to perform side effects in your components</b>. Some
           examples of side effects are: fetching data, directly updating the
           DOM, and timers. useEffect accepts two arguments. The second argument
           is optional. useEffect(fnction, dependency)
-          <UseEffectDemo />
+          <UseEffectDemo /> */}
         </li>
-        <li></li>
+        <li>
+          <h1>useRef()</h1>
+          <br />
+          The useRef Hook allows you to <b> persist values between renders</b>.
+          It can be used to store a mutable value that does not cause a
+          re-render when updated. It can be used to access a DOM element
+          directly.
+          <UseRefDemo />
+        </li>
         <li></li>
         <li></li>
       </ul>
