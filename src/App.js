@@ -8,6 +8,7 @@ import UseImerativeHandle from "./useImerativeHandle/UseImerativeHandle";
 import UseContext from "./useContext/UseContext";
 import UseMemo from "./useMemo/UseMemo";
 import UseCallback from "./useCallback/UseCallback";
+import UseReducerDemo from "./useReducer/UseReducerDemo";
 
 function App() {
   return (
@@ -15,43 +16,43 @@ function App() {
       <h1>ReactJS Hooks</h1>
       <ul style={{ textAlign: "left" }}>
         <li>
-          {/*  <h1>useState()</h1>
+          <h1>useState()</h1>
           <br />
           The useState() is a Hook that allows you to have state variables in
           functional components
-          <UseStateDemo /> */}
+          <UseStateDemo />
         </li>
         <li>
-          {/*  <h1>useReducer()</h1>
+          <h1>useReducer()</h1>
           <br />
           useReducer is usually preferable to useState when you have complex
           state logic that involves multiple sub-values or when the next state
           depends on the previous one. useReducer also lets you optimize
           performance for components that trigger deep updates because you can
           pass dispatch down instead of callbacks.
-          <UseReducerDemo /> */}
+          <UseReducerDemo />
         </li>
         <li>
-          {/*  <h1>useEffect()</h1>
+          <h1>useEffect()</h1>
           <br />
           The useEffect Hook{" "}
           <b>allows you to perform side effects in your components</b>. Some
           examples of side effects are: fetching data, directly updating the
           DOM, and timers. useEffect accepts two arguments. The second argument
           is optional. useEffect(fnction, dependency)
-          <UseEffectDemo /> */}
+          <UseEffectDemo />
         </li>
         <li>
-          {/*  <h1>useRef()</h1>
+          <h1>useRef()</h1>
           <br />
           The useRef Hook allows you to <b> persist values between renders</b>.
           It can be used to store a mutable value that does not cause a
           re-render when updated. It can be used to access a DOM element
           directly.
-          <UseRefDemo /> */}
+          <UseRefDemo />
         </li>
         <li>
-          {/*  <h1>useLayoutEffect()</h1>
+          <h1>useLayoutEffect()</h1>
           <br />
           useLayoutEffect is identical to useEffect, but it's major key
           difference is that{" "}
@@ -60,10 +61,10 @@ function App() {
           directly. useEffect() works AFTER DOM is loaded but useLayoutEffect is
           before DOM Loaded. So order of execution is as first useLayoutEffect
           and then useEffect
-          <UseLayoutEffect /> */}
+          <UseLayoutEffect />
         </li>
         <li>
-          {/*  <h1>useImperativeHandle()</h1>
+          <h1>useImperativeHandle()</h1>
           <br />
           useImperativeHandle{" "}
           <b>
@@ -73,10 +74,10 @@ function App() {
           . From there, the Parent can either use it itself or pass it to
           another Child. Note that you can only pass a ref as a prop to a child
           that wraps its component in forwardRef
-          <UseImerativeHandle /> */}
+          <UseImerativeHandle />
         </li>
         <li>
-          {/*   <h1>useContext()</h1>
+          <h1>useContext()</h1>
           <br />
           “useContext” hook is{" "}
           <b>
@@ -86,10 +87,10 @@ function App() {
           </b>
           . Context defined will be available to all the child components
           without involving “props”.
-          <UseContext /> */}
+          <UseContext />
         </li>
         <li>
-          {/*  <h1>useMemo()</h1>
+          <h1>useMemo()</h1>
           <br />
           <p>
             React has a built-in hook called useMemo that{" "}
@@ -101,7 +102,7 @@ function App() {
             will only recompute the memoized value when one of the inputs has
             changed
           </p>
-          <UseMemo /> */}
+          <UseMemo />
         </li>
 
         <li>
