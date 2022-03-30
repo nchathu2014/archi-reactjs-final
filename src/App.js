@@ -7,6 +7,7 @@ import UseLayoutEffect from "./useLayoutEffect/UseLayoutEffect";
 import UseImerativeHandle from "./useImerativeHandle/UseImerativeHandle";
 import UseContext from "./useContext/UseContext";
 import UseMemo from "./useMemo/UseMemo";
+import UseCallback from "./useCallback/UseCallback";
 
 function App() {
   return (
@@ -88,7 +89,7 @@ function App() {
           <UseContext /> */}
         </li>
         <li>
-          <h1>useMemo()</h1>
+          {/*  <h1>useMemo()</h1>
           <br />
           <p>
             React has a built-in hook called useMemo that{" "}
@@ -100,7 +101,23 @@ function App() {
             will only recompute the memoized value when one of the inputs has
             changed
           </p>
-          <UseMemo />
+          <UseMemo /> */}
+        </li>
+
+        <li>
+          <h1>useCallback()</h1>
+          <br />
+          <p>
+            The useCallback is a react hook that returns a memoized callback
+            when passed a function and a list of dependencies as parameters.
+            It's very useful{" "}
+            <b>
+              when a component is passing a callback to its child component to
+              prevent the rendering of the child component. NOTE: useMemo
+              memoize a value/data and useCallback memoize a function
+            </b>
+          </p>
+          <UseCallback />
         </li>
       </ul>
     </div>

@@ -38,3 +38,11 @@ useImperativeHandle allows you to pass values and functions from a Child compone
 ### 8- useMemo()
 
 React has a built-in hook called useMemo that allows you to memoize expensive functions so that you can avoid calling them on every render. You simple pass in a function and an array of inputs and useMemo will only recompute the memoized value when one of the inputs has changed.
+
+### 9- useCallback()
+
+The useCallback is a react hook that returns a memoized callback
+when passed a function and a list of dependencies as parameters.
+It's very useful when a component is passing a callback to its child component to prevent the rendering of the child component.
+
+NOTE: useMemo memoize a value/data and useCallback memoize a function
