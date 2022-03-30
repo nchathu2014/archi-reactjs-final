@@ -34,3 +34,7 @@ useImperativeHandle allows you to pass values and functions from a Child compone
 ### 7- useContext()
 
 “useContext” hook is used to create common data that can be accessed throughout the component hierarchy without passing the props down manually to each level. Context defined will be available to all the child components without involving “props”.
+
+### 8- useMemo()
+
+React has a built-in hook called useMemo that allows you to memoize expensive functions so that you can avoid calling them on every render. You simple pass in a function and an array of inputs and useMemo will only recompute the memoized value when one of the inputs has changed.

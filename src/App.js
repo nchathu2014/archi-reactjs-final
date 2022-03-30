@@ -6,6 +6,7 @@ import UseRefDemo from "./useRef/UseRefDemo";
 import UseLayoutEffect from "./useLayoutEffect/UseLayoutEffect";
 import UseImerativeHandle from "./useImerativeHandle/UseImerativeHandle";
 import UseContext from "./useContext/UseContext";
+import UseMemo from "./useMemo/UseMemo";
 
 function App() {
   return (
@@ -74,7 +75,7 @@ function App() {
           <UseImerativeHandle /> */}
         </li>
         <li>
-          <h1>useContext()</h1>
+          {/*   <h1>useContext()</h1>
           <br />
           “useContext” hook is{" "}
           <b>
@@ -84,9 +85,23 @@ function App() {
           </b>
           . Context defined will be available to all the child components
           without involving “props”.
-          <UseContext />
+          <UseContext /> */}
         </li>
-        <li></li>
+        <li>
+          <h1>useMemo()</h1>
+          <br />
+          <p>
+            React has a built-in hook called useMemo that{" "}
+            <b>
+              allows you to memoize expensive functions so that you can avoid
+              calling them on every render
+            </b>
+            . You simple pass in a function and an array of inputs and useMemo
+            will only recompute the memoized value when one of the inputs has
+            changed
+          </p>
+          <UseMemo />
+        </li>
       </ul>
     </div>
   );
