@@ -3,6 +3,7 @@ import "./App.css";
 import UseStateDemo from "./useState/UseStateDemo";
 import UseEffectDemo from "./useEffect/useEffectDemo";
 import UseRefDemo from "./useRef/UseRefDemo";
+import UseLayoutEffect from "./useLayoutEffect/UseLayoutEffect";
 
 function App() {
   return (
@@ -37,15 +38,26 @@ function App() {
           <UseEffectDemo /> */}
         </li>
         <li>
-          <h1>useRef()</h1>
+          {/*  <h1>useRef()</h1>
           <br />
           The useRef Hook allows you to <b> persist values between renders</b>.
           It can be used to store a mutable value that does not cause a
           re-render when updated. It can be used to access a DOM element
           directly.
-          <UseRefDemo />
+          <UseRefDemo /> */}
         </li>
-        <li></li>
+        <li>
+          <h1>useLayoutEffect()</h1>
+          <br />
+          useLayoutEffect is identical to useEffect, but it's major key
+          difference is that{" "}
+          <b>it gets triggered synchronously after all DOM mutation</b>. You
+          only want to use this hook when you need to do any DOM changes
+          directly. useEffect() works AFTER DOM is loaded but useLayoutEffect is
+          before DOM Loaded. So order of execution is as first useLayoutEffect
+          and then useEffect
+          <UseLayoutEffect />
+        </li>
         <li></li>
       </ul>
     </div>
