@@ -26,3 +26,7 @@ In React there is a concept called Controlled Components andUncontrolled Compone
 ### 5- useLayoutEffect()
 
 useLayoutEffect is identical to useEffect, but it's major key difference is that it gets triggered synchronously after all DOM mutation. You only want to use this hook when you need to do any DOM changes directly.
+
+### 6- useImperativeHandle()
+
+useImperativeHandle allows you to pass values and functions from a Child component back up to a Parent using a ref . From there, the Parent can either use it itself or pass it to another Child. Note that you can only pass a ref as a prop to a child that wraps its component in forwardRef

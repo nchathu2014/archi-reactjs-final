@@ -4,6 +4,7 @@ import UseStateDemo from "./useState/UseStateDemo";
 import UseEffectDemo from "./useEffect/useEffectDemo";
 import UseRefDemo from "./useRef/UseRefDemo";
 import UseLayoutEffect from "./useLayoutEffect/UseLayoutEffect";
+import UseImerativeHandle from "./useImerativeHandle/UseImerativeHandle";
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function App() {
           <UseRefDemo /> */}
         </li>
         <li>
-          <h1>useLayoutEffect()</h1>
+          {/*  <h1>useLayoutEffect()</h1>
           <br />
           useLayoutEffect is identical to useEffect, but it's major key
           difference is that{" "}
@@ -56,8 +57,22 @@ function App() {
           directly. useEffect() works AFTER DOM is loaded but useLayoutEffect is
           before DOM Loaded. So order of execution is as first useLayoutEffect
           and then useEffect
-          <UseLayoutEffect />
+          <UseLayoutEffect /> */}
         </li>
+        <li>
+          <h1>useImperativeHandle()</h1>
+          <br />
+          useImperativeHandle{" "}
+          <b>
+            allows you to pass values and functions from a Child component back
+            up to a Parent using a ref
+          </b>{" "}
+          . From there, the Parent can either use it itself or pass it to
+          another Child. Note that you can only pass a ref as a prop to a child
+          that wraps its component in forwardRef
+          <UseImerativeHandle />
+        </li>
+        <li></li>
         <li></li>
       </ul>
     </div>
